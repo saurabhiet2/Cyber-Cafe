@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Admin Login - JVS Internet Cyber Cafe</title>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/logo.png.jpeg" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admin.html">Admin Login</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">Admin Login</p>
+                <form>
+                    <input type="text" name="username" placeholder="Enter Username" class="form-input">
+                    <input type="password" name="password" placeholder="Enter Password" class="form-input">
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer">Copyright &copy; 2025 JVS Internet - All rights reserved</p>
+    </footer>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // You can add your authentication logic here (e.g., checking username/password)
+            const username = document.getElementsByName("username")[0].value;
+            const password = document.getElementsByName("password")[0].value;
+
+            // For example purposes, let's assume "admin" as username and "password123" as password
+            if (username === "admin" && password === "password123") {
+                window.location.href = "dashboard.html"; // Redirect to another page (e.g., dashboard.html)
+            } else {
+                alert("Invalid username or password!");
+            }
+        });
+    </script>
+    <script src="js/resp.js"></script>
+    <script src="js/resp.js"></script>
+</body>
+</html>

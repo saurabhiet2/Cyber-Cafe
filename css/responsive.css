@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1145px) {
+    .navbar {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: auto; /* Set to auto for flexibility */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center; /* Center-align navigation items */
+        width: 100%; /* Ensure full width for nav-list */
+    }
+
+    .nav-list li {
+        margin: 10px 0; /* Space between list items when stacked */
+    }
+
+    .rightNav {
+        text-align: center;
+        margin-top: 20px; /* Add spacing above rightNav content */
+        width: 100%; /* Ensure full width for rightNav */
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        padding: 20px; /* Add padding to prevent content touching edges */
+    }
+
+    #search {
+        width: 100%;
+        margin-top: 15px; /* Add spacing above the search bar */
+    }
+
+    .burger {
+        display: block;
+        margin: 10px 0; /* Add spacing above the burger menu */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    .h-nav-resp {
+        height: auto; /* Adjust height to auto for better responsiveness */
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+        padding: 20px; /* Ensure proper padding */
+    }
+
+    .text-small, .text-big, .buttons {
+        text-align: center;
+        width: 100%; /* Ensure full width */
+        margin-top: 20px; /* Add space above elements */
+    }
+
+    .paras {
+        padding: 20px 0; /* Add padding to prevent cramped text */
+        text-align: justify; /* Ensure justified text alignment */
+    }
+}
